@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="join.jsp">
+	<label>아이디 <input type="text" name="id"></label><br>
+	<label for="pwd">비밀번호</label><input type="password" name="pwd" id="pwd"><br>
+	사는지역
+	<!-- radio는 name속성을 같게 만들어야 그룹으로 묶임 -->
+	<input type="radio" name="addr" value="서울" checked="checked" id="addr1">
+	<label for="addr1">서울</label>
+	<input type="radio" name="addr" value="경기" id="addr2">
+	<label for="addr2">경기</label>
+	<input type="radio" name="addr" value="기타" id="addr3">
+	<label for="addr3">기타</label>
+	<br>
+	취미
+	<label>여행<input type="checkbox" value="여행" name="hobby"></label>
+	<label>영화<input type="checkbox" value="영화" name="hobby"></label>
+	<label>게임<input type="checkbox" value="게임" name="hobby"></label>
+	<br>
+	직업
+	<select name="job" size="1">
+		<option value="학생">학생</option>
+		<option value="공무원">공무원</option>
+		<option value="군인">군인</option>
+		<option value="기타">기타</option>
+	</select>
+	<br>
+	첨부파일 <input type="file" name="file1"><br>
+	기타<br>
+	<textarea rows="6" cols="50" name="desc"></textarea>
+	<br>
+	<input type="submit" value="가입">
+	<input type="reset" value="취소">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+

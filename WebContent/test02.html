@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/* css주석  */
+	#box1{width:400px;height: 100px;border:2px solid red;}
+	#box2{width:400px;height:200px;background-image: url('images/3.jpg');}
+	/* class속성이 mystyle인 요소에 css적용 */
+	.mystyle{font-size: 20px;color:blue;}
+	/* #box3요소의 자식중 클래스속성이 mystyle인 요소에 적용 */
+	#box3 .mystyle{background-color: orange;}
+	/* #box1요소중 클래스속성이 mystyle인 요소에 적용 */
+	#box1.mystyle{background-color: pink;}
+</style>
+</head>
+<body>
+<div id="box1" class="mystyle">
+	아리랑 아리랑 아라리요...
+</div>
+<div id="box2" class="mystyle">
+	아리랑고개로 넘어간다~~~
+</div>
+<div id="box3">
+	나를 버리고 가시는 님은~~~
+	<div class="mystyle">
+		십리도 못가서 발병난다~
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
